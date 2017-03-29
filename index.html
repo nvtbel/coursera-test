@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
-    <title>Hello Welcome</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>My Very First AngularJS Apps</title>
   </head>
   <body>
-    <h1>this is an example of website. i wanna add something. yay !</h1>
+    <h1>My First Angular Apps</h1>
+    <div ng-controller="MyFirstController">
+      <input type="text" ng-model="name"/> <!-- ng-model will look for smth called name in our scope and display & modify the content-->
+      Inside my input is : {{name}}
+    </div>
   </body>
 </html>
